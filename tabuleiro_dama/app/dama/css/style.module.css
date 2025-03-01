@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #383838;
+}
+
+.titulo {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.tabuleiro {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid white;
+}
+
+.casas {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.casaBranca {
+    background-color: #c9baa7;
+}
+
+.casaPreta {
+    background-color: #7e7e7e;
+}
+
+.pecas {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.pecaBranca {
+    background-color: white;
+}
+
+.pecaPreta {
+    background-color: black;
+}
+
+.pecaBranca:hover {
+    background-color: #dcdcdc;
+}
+
+.pecaPreta:hover {
+    background-color: #383838;
+}
+
+.linhas {
+    display: flex;
+    width: 100%;
+}
+
