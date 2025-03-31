@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Este é um projeto [Next.js](https://nextjs.org) inicializado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+## Menu Pastelaria
 
-First, run the development server:
+Este projeto faz parte dos desafios propostos na disciplina de Programação Script que curso.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Rodando o Projeto
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. O primeiro passo é clonar o repositório no GitHub.
+2. Entre na pasta do projeto utilizando ```cd pastelaria```.
+3. Utilize o comando ```npm install``` para instalar as dependências caso não as possua.
+4. Inicie o servidor de desenvolvimento com ```npm run dev```
+5. Abra http://localhost:3000 com seu navegador para ver o resultado, utilizando a rota /pastelaria.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Principais pontos de estilização
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Foram utilizados CSS Modules e Flexbox para a estilização, tornando o projeto mais modular, responsivo e flexível.
+2. Foram criados quatro componentes que integram o projeto: Titulo, ItemMenu, Menu; além do If, que aplica diferentes estilos a depender das condições.
+3. A estrutura modular permite que cada componente tenha uma única responsabilidade e possa ser reutilizado.
+4. O If foi aplicado para a lógica condicional.
+5. O layout foi projetado para ser totalmente responsivo, ajustando a quantidade de itens por fileira a depender da tela do dispositivo em que o projeto está sendo exibido.
+6. Next.js Image foi utilizada para otimizar a renderização das imagens.
