@@ -1,6 +1,6 @@
 Este é um projeto [Next.js](https://nextjs.org) inicializado com [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Menu Pastelaria
+## O Menu Pastelaria do seu Zé
 
 Este projeto faz parte dos desafios propostos na disciplina de Programação Script que curso.
 
