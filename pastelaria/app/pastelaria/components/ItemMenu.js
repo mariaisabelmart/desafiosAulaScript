@@ -1,9 +1,9 @@
 import styles from "@/app/pastelaria/css/style.module.css";
-import Image from "next/image";
 import If from "@/app/pastelaria/components/If";
+import Image from "next/image";
 
-export default function ItemMenu({ nome, preco }) {
-    const riscado = nome.includes("Pizza");
+export default function ItemMenu({ nome, preco, estoque }) {
+    const riscado = estoque === 0;
     const imagemSrc = "/image/pastel.jpeg";
 
     return (
