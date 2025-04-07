@@ -1,0 +1,111 @@
+.calculadoraContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #eaf6fb;
+    padding: 20px;
+}
+
+.calculadoraBox {
+    background: linear-gradient(to bottom, #0a1a2a, #04101a);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.calculadoraContent {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(to bottom, #222, #000);
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: inset 0 4px 6px rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.display + .botoesContainer {
+    margin-top: 15px;
+}
+
+.botoesContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 15px;
+    background: linear-gradient(to bottom, #1b3a57, #00274d);
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.botao {
+    width: 100%;
+    height: 70px;
+    background: radial-gradient(circle, #0d1b2a, #1b3a57);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0px 4px 6px rgba(255, 255, 255, 0.2),
+    0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.botaoC {
+    grid-column: span 2;
+}
+
+.botaoIgual {
+    grid-column: span 2;
+}
+
+.botao:hover {
+    background: radial-gradient(circle, #1b3a57, #0d1b2a);
+    transform: scale(1.1);
+}
+
+.operacao {
+    background: radial-gradient(circle, #003366, #001f3f);
+}
+
+.botao:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 500px) {
+    .calculadoraContent {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .display {
+        font-size: 1.5rem;
+        height: 80px;
+    }
+
+    .botao {
+        font-size: 1.2rem;
+        height: 60px;
+    }
+}
